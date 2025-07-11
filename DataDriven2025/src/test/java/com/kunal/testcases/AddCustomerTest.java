@@ -1,45 +1,31 @@
 package com.kunal.testcases;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.Alert;
 import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.kunal.base.TestBase;
+import com.kunal.base.BaseTest;
+import com.kunal.utilities.DataUtil;
 
-public class AddCustomerTest extends TestBase {
+public class AddCustomerTest extends BaseTest {
 
-	@BeforeClass
-	public void goToCustomer() {
-		click("bmlBtn_XPATH");
-		click("addCustBtn_XPATH");
-	}
-
-	@Test(dataProvider = "getCustomerData")
-	public void addCustomer(String firstName, String lastName, String postCode, String alertText) {
-		/*
-		// HashTable<String,String> data
-		if(!runMode.equals("Y")) {
-			throw new SkipException("Skipping the test data for the test case");
-		}
+	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp1")
+	public void addCustomer(String firstName, String lastName, String postCode) {
 		
-		if(!data.get("runMode").equals("Y")) {
-			throw new SkipException("Skipping the test data for the test case");
-		}
-		*/
-		type("firstName_CSS",firstName);
-		type("lastName_CSS",lastName);
-		type("postCode_CSS",postCode);
-		click("cutomerSubmit_CSS");
-		Reporter.log("Customer added successfully");
-		wait.until(ExpectedConditions.alertIsPresent());
-		Assert.assertTrue(alertText(driver, alertText));
-		alertAccept(driver);
+		click("addCustomerBtn_XPATH");
+		type("firstname_XPATH",firstName);
+		type("lastname_XPATH",lastName);
+		type("postcode_XPATH",postCode);
+		click("addcust_XPATH");
+		
+		Alert alert = driver.switchTo().alert();
+		Assert.assertTrue(alert.getText().contains("Customer added successfully"));
+		
+		alert.accept();
 	}
 
+	/*
 	@DataProvider
 	public Object[][] getCustomerData() {
 		Object[][] obj = new Object[2][4];
@@ -55,5 +41,5 @@ public class AddCustomerTest extends TestBase {
 
 		return obj;
 	}
-
+	*/
 }

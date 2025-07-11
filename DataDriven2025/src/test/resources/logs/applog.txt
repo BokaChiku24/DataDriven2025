@@ -1,0 +1,36 @@
+INFO    2025-07-11 19:25:52,355 [main] com.kunal.base.BaseTest  - Config properties loaded !!!
+INFO    2025-07-11 19:25:52,355 [main] com.kunal.base.BaseTest  - OR properties loaded !!!
+INFO    2025-07-11 19:25:53,334 [main] com.kunal.base.BaseTest  - Launching Chrome !!!
+INFO    2025-07-11 19:25:53,615 [main] com.kunal.base.BaseTest  - Navigated to : https://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2025-07-11 19:25:54,032 [main] com.kunal.base.BaseTest  - Clicking on an Element : bmlBtn_XPATH
+ERROR   2025-07-11 19:25:54,102 [main] com.kunal.base.BaseTest  - Error while Clicking on an Element : bmlBtn_XPATH error message : null
+INFO    2025-07-11 19:25:54,140 [main] com.kunal.base.BaseTest  - Clicking on an Element : openaccount_XPATH
+ERROR   2025-07-11 19:25:54,140 [main] com.kunal.base.BaseTest  - Error while Clicking on an Element : openaccount_XPATH error message : null
+ERROR   2025-07-11 19:26:02,632 [main] com.kunal.base.BaseTest  - Error while typing in an Element : username_ID error message : Error communicating with the remote browser. It may have died.
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.27'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f538feedcf524b8bc97932e07715b5c, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.94, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /var/folders/03/hcnh39r5371...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65379/devtoo..., se:cdpVersion: 138.0.7204.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f538feedcf524b8bc97932e07715b5c
+ERROR   2025-07-11 19:26:02,638 [main] com.kunal.base.BaseTest  - Error while Clicking on an Element : addCustomerBtn_XPATH error message : The driver server has unexpectedly died!
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.27'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f538feedcf524b8bc97932e07715b5c, findElement {value=.//button[@ng-click='addCust()'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.94, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /var/folders/03/hcnh39r5371...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65379/devtoo..., se:cdpVersion: 138.0.7204.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f538feedcf524b8bc97932e07715b5c
+ERROR   2025-07-11 19:26:02,641 [main] com.kunal.base.BaseTest  - Error while Clicking on an Element : addCustomerBtn_XPATH error message : The driver server has unexpectedly died!
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.27'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f538feedcf524b8bc97932e07715b5c, findElement {value=.//button[@ng-click='addCust()'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.94, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /var/folders/03/hcnh39r5371...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65379/devtoo..., se:cdpVersion: 138.0.7204.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f538feedcf524b8bc97932e07715b5c
+ERROR   2025-07-11 19:26:02,644 [main] com.kunal.base.BaseTest  - Error while Clicking on an Element : addCustomerBtn_XPATH error message : The driver server has unexpectedly died!
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.27'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f538feedcf524b8bc97932e07715b5c, findElement {value=.//button[@ng-click='addCust()'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.94, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /var/folders/03/hcnh39r5371...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65379/devtoo..., se:cdpVersion: 138.0.7204.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f538feedcf524b8bc97932e07715b5c

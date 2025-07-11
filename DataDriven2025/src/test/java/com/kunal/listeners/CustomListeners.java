@@ -1,3 +1,4 @@
+/*
 package com.kunal.listeners;
 
 import org.testng.ISuite;
@@ -24,7 +25,7 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 		 * // Run modes - Y/N if(!TestUtils.isTestRunnable(result.getName(),excel)) {
 		 * throw new SkipException("Skipping the test" + result.getName().toUpperCase()
 		 * + " as run mode is set to No"); }
-		 */
+		 
 
 	}
 
@@ -72,7 +73,7 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 		// not implemented
 	}
 
-	/*
+	
 	public void onFinish(ISuite suite) {
 		// not implemented
 		MonitoringMail mail = new MonitoringMail();
@@ -94,7 +95,9 @@ public class CustomListeners extends TestBase implements ITestListener, ISuiteLi
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	*/
+	
 	
 
 }
+
+*/

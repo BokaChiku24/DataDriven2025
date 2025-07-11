@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Data Driven Basis">
-<listeners>
-<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
-<listener class-name="com.kunal.listeners.CustomListeners"></listener>
-</listeners>
-  <test thread-count="5" name="Bank Manager Test">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+	<listeners>
+	<listener class-name="com.kunal.extentlisteners.ExtentListeners" />
+		</listeners>
+
+
+  <test name="Bank Manager Login Test">
     <classes>
       <class name="com.kunal.testcases.BankManagerLoginTest"/>
+
     </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="Add Customer Test">
+  </test> 
+    
+  <test name="Add Customer Test">
     <classes>
       <class name="com.kunal.testcases.AddCustomerTest"/>
+
     </classes>
-  </test> <!-- Test -->
+  </test> 
   
-  <test thread-count="5" name="Open ">
+  <test name="Open Account Test">
     <classes>
       <class name="com.kunal.testcases.OpenAccountTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
 
+    </classes>
+  </test> 
+  
+</suite> 

@@ -1,272 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Test case start: loginAsBankmanager]]>
-    </line>
-    <line>
-      <![CDATA[<br>Verification failure: expected [abc] but found [xyz]<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_22_IST_2025error.jpg><img src=Fri_Jul_11_15_58_22_IST_2025error.jpg height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[Captuing screenshot..]]>
-    </line>
-    <line>
-      <![CDATA[Screenshot captured..]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_23_IST_2025error.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_23_IST_2025error.jpg><img src =Fri_Jul_11_15_58_23_IST_2025error.jpg height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[Test case start: addCustomer]]>
-    </line>
-    <line>
-      <![CDATA[Customer added successfully]]>
-    </line>
-    <line>
-      <![CDATA[Test case finished: addCustomer]]>
-    </line>
-    <line>
-      <![CDATA[Test case start: addCustomer]]>
-    </line>
-    <line>
-      <![CDATA[Customer added successfully]]>
-    </line>
-    <line>
-      <![CDATA[Test case finished: addCustomer]]>
-    </line>
-    <line>
-      <![CDATA[Test case start: openAccountTest]]>
-    </line>
-    <line>
-      <![CDATA[Account open successfully]]>
-    </line>
-    <line>
-      <![CDATA[Test case finished: openAccountTest]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-07-11T15:58:21 IST" name="Data Driven Basis" finished-at="2025-07-11T15:58:27 IST" duration-ms="5924">
+  <suite started-at="2025-07-11T13:55:24Z" name="Suite" finished-at="2025-07-11T13:55:26Z" duration-ms="1243">
     <groups>
     </groups>
-    <test started-at="2025-07-11T15:58:21 IST" name="Bank Manager Test" finished-at="2025-07-11T15:58:23 IST" duration-ms="2024">
+    <test started-at="2025-07-11T13:55:24Z" name="Bank Manager Login Test" finished-at="2025-07-11T13:55:25Z" duration-ms="117">
       <class name="com.kunal.testcases.BankManagerLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@487db668]" started-at="2025-07-11T15:58:21 IST" name="setup" finished-at="2025-07-11T15:58:22 IST" duration-ms="1437" status="PASS">
+        <test-method signature="loginAsBankManager()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@5ae81e1]" started-at="2025-07-11T13:55:25Z" name="loginAsBankManager" finished-at="2025-07-11T13:55:25Z" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginAsBankmanager()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@487db668]" started-at="2025-07-11T15:58:22 IST" name="loginAsBankmanager" finished-at="2025-07-11T15:58:23 IST" duration-ms="325" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failing testcase intentinally]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failing testcase intentinally
-at org.testng.Assert.fail(Assert.java:111)
-at com.kunal.testcases.BankManagerLoginTest.loginAsBankmanager(BankManagerLoginTest.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test case start: loginAsBankmanager]]>
-            </line>
-            <line>
-              <![CDATA[<br>Verification failure: expected [abc] but found [xyz]<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_22_IST_2025error.jpg><img src=Fri_Jul_11_15_58_22_IST_2025error.jpg height=200 width=200></img></a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[Captuing screenshot..]]>
-            </line>
-            <line>
-              <![CDATA[Screenshot captured..]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_23_IST_2025error.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_23_IST_2025error.jpg><img src =Fri_Jul_11_15_58_23_IST_2025error.jpg height=200 width=200></img></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginAsBankmanager -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@487db668]" started-at="2025-07-11T15:58:23 IST" name="tearDown" finished-at="2025-07-11T15:58:23 IST" duration-ms="89" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.kunal.testcases.BankManagerLoginTest -->
-    </test> <!-- Bank Manager Test -->
-    <test started-at="2025-07-11T15:58:23 IST" name="Add Customer Test" finished-at="2025-07-11T15:58:25 IST" duration-ms="2007">
+    </test> <!-- Bank Manager Login Test -->
+    <test started-at="2025-07-11T13:55:25Z" name="Add Customer Test" finished-at="2025-07-11T13:55:25Z" duration-ms="629">
       <class name="com.kunal.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.AddCustomerTest@68be8808]" started-at="2025-07-11T15:58:23 IST" name="setup" finished-at="2025-07-11T15:58:24 IST" duration-ms="1195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="goToCustomer()[pri:0, instance:com.kunal.testcases.AddCustomerTest@68be8808]" started-at="2025-07-11T15:58:24 IST" name="goToCustomer" finished-at="2025-07-11T15:58:24 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToCustomer -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@68be8808]" started-at="2025-07-11T15:58:24 IST" name="addCustomer" data-provider="getCustomerData" finished-at="2025-07-11T15:58:24 IST" duration-ms="253" status="PASS">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@7e70bd39]" started-at="2025-07-11T13:55:25Z" name="addCustomer" data-provider="dp1" finished-at="2025-07-11T13:55:25Z" duration-ms="317" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kunal]]>
+                <![CDATA[Rahul]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Chavan]]>
+                <![CDATA[Arora]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[51109]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Customer added successfully]]>
+                <![CDATA[A34234]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test case start: addCustomer]]>
-            </line>
-            <line>
-              <![CDATA[Customer added successfully]]>
-            </line>
-            <line>
-              <![CDATA[Test case finished: addCustomer]]>
-            </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@68be8808]" started-at="2025-07-11T15:58:25 IST" name="addCustomer" data-provider="getCustomerData" finished-at="2025-07-11T15:58:25 IST" duration-ms="159" status="PASS">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@7e70bd39]" started-at="2025-07-11T13:55:25Z" name="addCustomer" data-provider="dp1" finished-at="2025-07-11T13:55:25Z" duration-ms="146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Raghav]]>
+                <![CDATA[Cory]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Chavan]]>
+                <![CDATA[Paul]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[47899]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Customer added successfully]]>
+                <![CDATA[S3434]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test case start: addCustomer]]>
-            </line>
-            <line>
-              <![CDATA[Customer added successfully]]>
-            </line>
-            <line>
-              <![CDATA[Test case finished: addCustomer]]>
-            </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.AddCustomerTest@68be8808]" started-at="2025-07-11T15:58:25 IST" name="tearDown" finished-at="2025-07-11T15:58:25 IST" duration-ms="88" status="PASS">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@7e70bd39]" started-at="2025-07-11T13:55:25Z" name="addCustomer" data-provider="dp1" finished-at="2025-07-11T13:55:25Z" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aryan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Khan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[S23434]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- addCustomer -->
       </class> <!-- com.kunal.testcases.AddCustomerTest -->
     </test> <!-- Add Customer Test -->
-    <test started-at="2025-07-11T15:58:25 IST" name="Open " finished-at="2025-07-11T15:58:27 IST" duration-ms="1884">
+    <test started-at="2025-07-11T13:55:25Z" name="Open Account Test" finished-at="2025-07-11T13:55:26Z" duration-ms="324">
       <class name="com.kunal.testcases.OpenAccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.OpenAccountTest@ebaa6cb]" started-at="2025-07-11T15:58:25 IST" name="setup" finished-at="2025-07-11T15:58:26 IST" duration-ms="1385" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2e5c7f0b]" started-at="2025-07-11T13:55:23Z" name="setUp" finished-at="2025-07-11T13:55:24Z" duration-ms="1661" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="goToAccount()[pri:0, instance:com.kunal.testcases.OpenAccountTest@ebaa6cb]" started-at="2025-07-11T15:58:26 IST" name="goToAccount" finished-at="2025-07-11T15:58:26 IST" duration-ms="188" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="openAccount(java.lang.String, java.lang.String)[pri:0, instance:com.kunal.testcases.OpenAccountTest@2e5c7f0b]" started-at="2025-07-11T13:55:25Z" name="openAccount" data-provider="dp1" finished-at="2025-07-11T13:55:26Z" duration-ms="323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rahul Arora]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rupee]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToAccount -->
-        <test-method signature="openAccountTest()[pri:0, instance:com.kunal.testcases.OpenAccountTest@ebaa6cb]" started-at="2025-07-11T15:58:26 IST" name="openAccountTest" finished-at="2025-07-11T15:58:27 IST" duration-ms="207" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test case start: openAccountTest]]>
-            </line>
-            <line>
-              <![CDATA[Account open successfully]]>
-            </line>
-            <line>
-              <![CDATA[Test case finished: openAccountTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- openAccountTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.OpenAccountTest@ebaa6cb]" started-at="2025-07-11T15:58:27 IST" name="tearDown" finished-at="2025-07-11T15:58:27 IST" duration-ms="90" status="PASS">
+        </test-method> <!-- openAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2e5c7f0b]" started-at="2025-07-11T13:55:26Z" name="tearDown" finished-at="2025-07-11T13:55:26Z" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.kunal.testcases.OpenAccountTest -->
-    </test> <!-- Open  -->
-  </suite> <!-- Data Driven Basis -->
+    </test> <!-- Open Account Test -->
+  </suite> <!-- Suite -->
 </testng-results>
