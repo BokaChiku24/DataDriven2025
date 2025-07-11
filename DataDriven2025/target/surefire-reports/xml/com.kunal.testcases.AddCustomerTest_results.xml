@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.471">
+           time="0.511">
   <properties />
   
   
-            <testcase name="addCustomer" time="0.237" classname="com.kunal.testcases.AddCustomerTest" />
-                <testcase name="addCustomer" time="0.234" classname="com.kunal.testcases.AddCustomerTest" />
+            <testcase name="addCustomer" time="0.307" classname="com.kunal.testcases.AddCustomerTest" />
+                <testcase name="addCustomer" time="0.204" classname="com.kunal.testcases.AddCustomerTest" />
       
 </testsuite>

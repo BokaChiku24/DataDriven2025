@@ -8,7 +8,7 @@
       <![CDATA[<br>Verification failure: expected [abc] but found [xyz]<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_02_IST_2025error.jpg><img src=Fri_Jul_11_15_58_02_IST_2025error.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jul_11_16_17_48_IST_2025error.jpg><img src=Fri_Jul_11_16_17_48_IST_2025error.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -23,7 +23,7 @@
       <![CDATA[Screenshot captured..]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_02_IST_2025error.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jul_11_16_17_48_IST_2025error.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -32,7 +32,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_02_IST_2025error.jpg><img src =Fri_Jul_11_15_58_02_IST_2025error.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jul_11_16_17_48_IST_2025error.jpg><img src =Fri_Jul_11_16_17_48_IST_2025error.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Test case start: addCustomer]]>
@@ -62,16 +62,16 @@
       <![CDATA[Test case finished: openAccountTest]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-11T15:57:59 IST" name="Data Driven Basis" finished-at="2025-07-11T15:58:06 IST" duration-ms="6718">
+  <suite started-at="2025-07-11T16:17:46 IST" name="Data Driven Basis" finished-at="2025-07-11T16:17:53 IST" duration-ms="6751">
     <groups>
     </groups>
-    <test started-at="2025-07-11T15:57:59 IST" name="Bank Manager Test" finished-at="2025-07-11T15:58:02 IST" duration-ms="2857">
+    <test started-at="2025-07-11T16:17:46 IST" name="Bank Manager Test" finished-at="2025-07-11T16:17:49 IST" duration-ms="2408">
       <class name="com.kunal.testcases.BankManagerLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@1115ec15]" started-at="2025-07-11T15:57:59 IST" name="setup" finished-at="2025-07-11T15:58:02 IST" duration-ms="2316" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@1115ec15]" started-at="2025-07-11T16:17:46 IST" name="setup" finished-at="2025-07-11T16:17:48 IST" duration-ms="1648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginAsBankmanager()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@1115ec15]" started-at="2025-07-11T15:58:02 IST" name="loginAsBankmanager" finished-at="2025-07-11T15:58:02 IST" duration-ms="293" status="FAIL">
+        <test-method signature="loginAsBankmanager()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@1115ec15]" started-at="2025-07-11T16:17:48 IST" name="loginAsBankmanager" finished-at="2025-07-11T16:17:48 IST" duration-ms="383" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Failing testcase intentinally]]>
@@ -122,7 +122,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
               <![CDATA[<br>Verification failure: expected [abc] but found [xyz]<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_02_IST_2025error.jpg><img src=Fri_Jul_11_15_58_02_IST_2025error.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jul_11_16_17_48_IST_2025error.jpg><img src=Fri_Jul_11_16_17_48_IST_2025error.jpg height=200 width=200></img></a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -137,7 +137,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
               <![CDATA[Screenshot captured..]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_02_IST_2025error.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jul_11_16_17_48_IST_2025error.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -146,27 +146,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_11_15_58_02_IST_2025error.jpg><img src =Fri_Jul_11_15_58_02_IST_2025error.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jul_11_16_17_48_IST_2025error.jpg><img src =Fri_Jul_11_16_17_48_IST_2025error.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankmanager -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@1115ec15]" started-at="2025-07-11T15:58:02 IST" name="tearDown" finished-at="2025-07-11T15:58:02 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.BankManagerLoginTest@1115ec15]" started-at="2025-07-11T16:17:48 IST" name="tearDown" finished-at="2025-07-11T16:17:49 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.kunal.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Test -->
-    <test started-at="2025-07-11T15:58:02 IST" name="Add Customer Test" finished-at="2025-07-11T15:58:04 IST" duration-ms="2074">
+    <test started-at="2025-07-11T16:17:49 IST" name="Add Customer Test" finished-at="2025-07-11T16:17:51 IST" duration-ms="2214">
       <class name="com.kunal.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T15:58:02 IST" name="setup" finished-at="2025-07-11T15:58:04 IST" duration-ms="1233" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T16:17:49 IST" name="setup" finished-at="2025-07-11T16:17:50 IST" duration-ms="1298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="goToCustomer()[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T15:58:04 IST" name="goToCustomer" finished-at="2025-07-11T15:58:04 IST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="goToCustomer()[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T16:17:50 IST" name="goToCustomer" finished-at="2025-07-11T16:17:50 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToCustomer -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T15:58:04 IST" name="addCustomer" data-provider="getCustomerData" finished-at="2025-07-11T15:58:04 IST" duration-ms="237" status="PASS">
+        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T16:17:50 IST" name="addCustomer" data-provider="getCustomerData" finished-at="2025-07-11T16:17:50 IST" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,7 +201,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T15:58:04 IST" name="addCustomer" data-provider="getCustomerData" finished-at="2025-07-11T15:58:04 IST" duration-ms="234" status="PASS">
+        <test-method signature="addCustomer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T16:17:50 IST" name="addCustomer" data-provider="getCustomerData" finished-at="2025-07-11T16:17:51 IST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,23 +236,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T15:58:04 IST" name="tearDown" finished-at="2025-07-11T15:58:04 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.AddCustomerTest@338c99c8]" started-at="2025-07-11T16:17:51 IST" name="tearDown" finished-at="2025-07-11T16:17:51 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.kunal.testcases.AddCustomerTest -->
     </test> <!-- Add Customer Test -->
-    <test started-at="2025-07-11T15:58:04 IST" name="Open " finished-at="2025-07-11T15:58:06 IST" duration-ms="1775">
+    <test started-at="2025-07-11T16:17:51 IST" name="Open " finished-at="2025-07-11T16:17:53 IST" duration-ms="2115">
       <class name="com.kunal.testcases.OpenAccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T15:58:04 IST" name="setup" finished-at="2025-07-11T15:58:06 IST" duration-ms="1266" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T16:17:51 IST" name="setup" finished-at="2025-07-11T16:17:52 IST" duration-ms="1411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="goToAccount()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T15:58:06 IST" name="goToAccount" finished-at="2025-07-11T15:58:06 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="goToAccount()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T16:17:52 IST" name="goToAccount" finished-at="2025-07-11T16:17:52 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToAccount -->
-        <test-method signature="openAccountTest()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T15:58:06 IST" name="openAccountTest" finished-at="2025-07-11T15:58:06 IST" duration-ms="297" status="PASS">
+        <test-method signature="openAccountTest()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T16:17:52 IST" name="openAccountTest" finished-at="2025-07-11T16:17:53 IST" duration-ms="371" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test case start: openAccountTest]]>
@@ -265,7 +265,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
             </line>
           </reporter-output>
         </test-method> <!-- openAccountTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T15:58:06 IST" name="tearDown" finished-at="2025-07-11T15:58:06 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.kunal.testcases.OpenAccountTest@2796aeae]" started-at="2025-07-11T16:17:53 IST" name="tearDown" finished-at="2025-07-11T16:17:53 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
