@@ -1,0 +1,10 @@
+
+1) Make sure extent report is working locally
+
+2) Add jenkins plug-in 'HTML Publisher' 
+
+3) provide the extent html path in jenkins after post build
+
+4) Run the jenkins .war by following command: 
+   
+   java -Dhudson.modeel.DirectoryBrowserSupport.CSP="" -jar jenkins.war

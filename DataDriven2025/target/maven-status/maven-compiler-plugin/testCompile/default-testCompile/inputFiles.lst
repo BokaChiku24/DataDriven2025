@@ -1,9 +1,12 @@
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/base/TestBase.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/listeners/CustomListeners.java
+/Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/rough/TestHostAddress.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/rough/TestTimeStamp.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/rough/Testing.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/testcases/AddCustomerTest.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/testcases/BankManagerLoginTest.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/testcases/OpenAccountTest.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/utilities/ExtentManager.java
+/Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/utilities/MonitoringMail.java
+/Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/utilities/TestConfig.java
 /Users/kunalchavan/git/repository5/DataDriven2025/src/test/java/com/kunal/utilities/TestUtils.java

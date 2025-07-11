@@ -2,7 +2,6 @@ package com.kunal.base;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -44,6 +43,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public ExtentReports report = ExtentManager.getInstance();
 	public static ExtentTest test;
+	public static String browser;
 
 	@BeforeTest
 	public void setup() {
@@ -62,6 +62,14 @@ public class TestBase {
 				e.printStackTrace();
 			}
 		}
+
+		if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+			browser = System.getenv("browser");
+		} else {
+
+			browser = config.getProperty("browser");
+		}
+		config.setProperty("browser", browser);
 
 		if (config.getProperty("browser").equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
@@ -85,7 +93,8 @@ public class TestBase {
 		driver.get(config.getProperty("testsiteurl"));
 		log.debug("Navigated to: " + config.getProperty("testsiteurl"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicitlyWait")),TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicitlyWait")),
+				TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 20);
 
 	}
@@ -104,7 +113,7 @@ public class TestBase {
 				driver.findElement(By.id(or.getProperty(locator))).isDisplayed();
 				test.log(LogStatus.INFO, "Clicking on:  " + locator);
 				return true;
-			}else {
+			} else {
 				return false;
 			}
 		} catch (NoSuchElementException e) {
@@ -154,29 +163,30 @@ public class TestBase {
 		return driver.switchTo().alert().getText().contains(text);
 	}
 
-public static WebElement dropdown;
-	
+	public static WebElement dropdown;
+
 	public void select(String locator, String value) {
 		if (locator.endsWith("_CSS")) {
 			dropdown = driver.findElement(By.cssSelector(or.getProperty(locator)));
 		} else if (locator.endsWith("_XPATH")) {
-			dropdown=driver.findElement(By.xpath(or.getProperty(locator)));
+			dropdown = driver.findElement(By.xpath(or.getProperty(locator)));
 		} else if (locator.endsWith("_ID")) {
-			dropdown=driver.findElement(By.id(or.getProperty(locator)));
+			dropdown = driver.findElement(By.id(or.getProperty(locator)));
 		}
 		Select select = new Select(dropdown);
 		select.selectByVisibleText(value);
 		test.log(LogStatus.INFO, "Select from dopdown:  " + locator + " Value as: " + value);
 
 	}
-	
+
 	public static void verifyEquals(String expected, String actual) {
 		try {
 			Assert.assertEquals(actual, expected);
-		}catch(Throwable t) {
+		} catch (Throwable t) {
 			TestUtils.captureScreenshot();
-			Reporter.log("<br>"+"Verification failure: " + t.getMessage() + "<br>");
-			Reporter.log("<a target=\"_blank\" href="+TestUtils.screenshotName+"><img src="+TestUtils.screenshotName+" height=200 width=200></img></a>");
+			Reporter.log("<br>" + "Verification failure: " + t.getMessage() + "<br>");
+			Reporter.log("<a target=\"_blank\" href=" + TestUtils.screenshotName + "><img src="
+					+ TestUtils.screenshotName + " height=200 width=200></img></a>");
 			Reporter.log("<br>");
 			Reporter.log("<br>");
 			test.log(LogStatus.FAIL, "Verificication failed with exception: " + t.getMessage());
@@ -184,7 +194,7 @@ public static WebElement dropdown;
 
 		}
 	}
-	
+
 	@AfterTest
 	public void tearDown() {
 		if (driver != null)

@@ -1,117 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.318" tests="4" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="0.989" tests="4" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="JOB_NAME" value="DataDriven2025"/>
-    <property name="maven.compiler.fork" value="true"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8080/job/DataDriven2025/2/display/redirect?page=tests"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="JENKINS_HOME" value="/Users/kunalchavan/.jenkins"/>
-    <property name="PATH" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin"/>
-    <property name="HUDSON_SERVER_COOKIE" value="0bd3a11025f2b985"/>
-    <property name="POM_ARTIFACTID" value="Hybrid_DataKeywordDriven"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="Hybrid_DataKeywordDriven"/>
-    <property name="NODE_LABELS" value="built-in"/>
-    <property name="java.runtime.version" value="21.0.7"/>
-    <property name="user.name" value="kunalchavan"/>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.27+8-LTS-232"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/kunalchavan/git/repository5/DataDriven2025"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="maven.compiler.executable" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/javac"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="DataDriven2025"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/DataDriven2025/2/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#2"/>
-    <property name="TMPDIR" value="/var/folders/03/hcnh39r537140p8fpvh_lyk40000gn/T/"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.version" value="21.0.7"/>
-    <property name="XPC_FLAGS" value="0x0"/>
-    <property name="user.timezone" value="Asia/Kolkata"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="NODE_NAME" value="built-in"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="BUILD_ID" value="2"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="SHELL" value="/bin/zsh"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="maven.conf" value="/Library/apache-maven-3.9.8/conf"/>
-    <property name="java.class.version" value="65.0"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="user.country" value="IN"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="os.version" value="15.5"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/DataDriven2025/2/display/redirect"/>
-    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="path.separator" value=":"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8080/job/DataDriven2025/2/display/redirect?page=artifacts"/>
-    <property name="java.vm.version" value="21.0.7"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/DataDriven2025/display/redirect"/>
-    <property name="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="LOGNAME" value="kunalchavan"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="HOME" value="/Users/kunalchavan"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="POM_GROUPID" value="Kunal_Chavan"/>
-    <property name="user.home" value="/Users/kunalchavan"/>
-    <property name="BUILD_TAG" value="jenkins-DataDriven2025-2"/>
-    <property name="JENKINS_SERVER_COOKIE" value="0bd3a11025f2b985"/>
-    <property name="XPC_SERVICE_NAME" value="homebrew.mxcl.jenkins-lts"/>
-    <property name="HUDSON_URL" value="http://localhost:8080/"/>
-    <property name="java.version.date" value="2025-04-15"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="java.library.path" value="/Users/kunalchavan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="maven.home" value="/Library/apache-maven-3.9.8"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /Library/apache-maven-3.9.8/ /Users/kunalchavan/.jenkins/war/WEB-INF/lib/remoting-3301.v4363ddcca_4e7.jar /Users/kunalchavan/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar /Users/kunalchavan/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar 59657"/>
-    <property name="java.class.path" value="/Users/kunalchavan/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.14.jar:/Library/apache-maven-3.9.8/boot/plexus-classworlds-2.8.0.jar:/Library/apache-maven-3.9.8//conf/logging"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="jdk.debug" value="release"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="jansi.mode" value="strip"/>
-    <property name="PATH+JDK" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin"/>
-    <property name="java.vm.specification.version" value="21"/>
-    <property name="M2_HOME" value="/Library/apache-maven-3.9.8/"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="CI" value="true"/>
-    <property name="java.io.tmpdir" value="/var/folders/03/hcnh39r537140p8fpvh_lyk40000gn/T/"/>
-    <property name="HUDSON_HOME" value="/Users/kunalchavan/.jenkins"/>
-    <property name="PATH+MAVEN" value="/Library/apache-maven-3.9.8//bin"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/DataDriven2025/2/"/>
-    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.xNvvU4Ge82/Listeners"/>
-    <property name="os.arch" value="aarch64"/>
-    <property name="__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0"/>
     <property name="user.dir" value="/Users/kunalchavan/git/repository5/DataDriven2025"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/DataDriven2025/"/>
-    <property name="apple.awt.application.name" value="Maven35Main"/>
-    <property name="MAVEN_HOME" value="/Library/apache-maven-3.9.8/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.27+8-LTS-232"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/03/hcnh39r537140p8fpvh_lyk40000gn/T/"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="2"/>
-    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/kunalchavan/eclipse-workspace-2025/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf14553793455313737809.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/kunalchavan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="15.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/kunalchavan"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="maven3.interceptor" value="/Users/kunalchavan/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar"/>
-    <property name="WORKSPACE_TMP" value="/Users/kunalchavan/.jenkins/workspace/DataDriven2025@tmp"/>
-    <property name="WORKSPACE" value="/Users/kunalchavan/.jenkins/workspace/DataDriven2025"/>
-    <property name="jvm" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java"/>
-    <property name="maven3.interceptor.common" value="/Users/kunalchavan/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar"/>
-    <property name="java.specification.version" value="21"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="USER" value="kunalchavan"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="kunalchavan"/>
+    <property name="java.class.path" value="/Users/kunalchavan/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013/jars/plexus-classworlds-2.8.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.27"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="maven.home" value="/Users/kunalchavan/git/repository5/DataDriven2025/EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="m2e.build.project.data.socket.port" value="59803"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="loginAsBankmanager" classname="com.kunal.testcases.BankManagerLoginTest" time="0.546">
+  <testcase name="loginAsBankmanager" classname="com.kunal.testcases.BankManagerLoginTest" time="0.462">
     <failure message="Failing testcase intentinally" type="java.lang.AssertionError">java.lang.AssertionError: Failing testcase intentinally
 	at org.testng.Assert.fail(Assert.java:111)
 	at com.kunal.testcases.BankManagerLoginTest.loginAsBankmanager(BankManagerLoginTest.java:17)
@@ -122,14 +78,14 @@ SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 log4j:WARN No appenders could be found for logger (devpinoyLogger).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Starting ChromeDriver 137.0.7151.70 (dfa4dc56b2abb56eb2a14cad006ea5e68c60d5de-refs/branch-heads/7151@{#1875}) on port 39768
+Starting ChromeDriver 137.0.7151.70 (dfa4dc56b2abb56eb2a14cad006ea5e68c60d5de-refs/branch-heads/7151@{#1875}) on port 46119
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 39768.
-[1752230867.608][WARNING]: This version of ChromeDriver has not been tested with Chrome version 138.
+ChromeDriver was started successfully on port 46119.
+[1752234465.307][WARNING]: This version of ChromeDriver has not been tested with Chrome version 138.
 ]]></system-err>
   </testcase>
-  <testcase name="addCustomer" classname="com.kunal.testcases.AddCustomerTest" time="0.387"/>
-  <testcase name="addCustomer" classname="com.kunal.testcases.AddCustomerTest" time="0.22"/>
-  <testcase name="openAccountTest" classname="com.kunal.testcases.OpenAccountTest" time="0.385"/>
+  <testcase name="addCustomer" classname="com.kunal.testcases.AddCustomerTest" time="0.321"/>
+  <testcase name="addCustomer" classname="com.kunal.testcases.AddCustomerTest" time="0.156"/>
+  <testcase name="openAccountTest" classname="com.kunal.testcases.OpenAccountTest" time="0.206"/>
 </testsuite>

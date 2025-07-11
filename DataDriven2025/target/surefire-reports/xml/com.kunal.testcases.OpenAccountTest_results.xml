@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.371">
+           time="0.193">
   <properties />
   
   
-            <testcase name="openAccountTest" time="0.371" classname="com.kunal.testcases.OpenAccountTest" />
+            <testcase name="openAccountTest" time="0.193" classname="com.kunal.testcases.OpenAccountTest" />
       
 </testsuite>

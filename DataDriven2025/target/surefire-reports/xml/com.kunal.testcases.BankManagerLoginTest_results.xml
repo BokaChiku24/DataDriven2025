@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.383">
+           time="0.304">
   <properties />
-            <testcase name="loginAsBankmanager" time="0.383" classname="com.kunal.testcases.BankManagerLoginTest">
+            <testcase name="loginAsBankmanager" time="0.304" classname="com.kunal.testcases.BankManagerLoginTest">
                 <failure type="java.lang.AssertionError"
                   message="Failing testcase intentinally"
               >
