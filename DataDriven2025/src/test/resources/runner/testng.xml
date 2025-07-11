@@ -4,35 +4,29 @@
 
 
 	<listeners>
-	<listener class-name="extentlisteners.ExtentListeners" />
+	<listener class-name="com.kunal.extentlisteners.ExtentListeners" />
 		</listeners>
 
 
   <test name="Bank Manager Login Test">
     <classes>
-      <class name="testcases.BankManagerLoginTest"/>
+      <class name="com.kunal.testcases.BankManagerLoginTest"/>
 
     </classes>
-  </test> <!-- Test -->
-  
-    
+  </test> 
     
   <test name="Add Customer Test">
     <classes>
-      <class name="testcases.AddCustomerTest"/>
+      <class name="com.kunal.testcases.AddCustomerTest"/>
 
     </classes>
-  </test> <!-- Test -->
+  </test> 
   
-  
-     
   <test name="Open Account Test">
     <classes>
-      <class name="testcases.OpenAccountTest"/>
+      <class name="com.kunal.testcases.OpenAccountTest"/>
 
     </classes>
-  </test> <!-- Test -->
-    
+  </test> 
   
-  
-</suite> <!-- Suite -->
+</suite> 

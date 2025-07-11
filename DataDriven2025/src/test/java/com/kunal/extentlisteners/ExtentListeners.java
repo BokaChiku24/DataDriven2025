@@ -17,18 +17,16 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
-
-
 public class ExtentListeners implements ITestListener, ISuiteListener {
 
 	static Date d = new Date();
 	static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
 	private static ExtentReports extent = ExtentManager
-			.createInstance(".\\reports\\" + fileName);
+			.createInstance(fileName);
 
 	public static ExtentTest test;
-	
+
 	public void onTestStart(ITestResult result) {
 
 		test = extent
@@ -46,28 +44,22 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		
 
-		///test.fail(result.getThrowable().getMessage());
+		/// test.fail(result.getThrowable().getMessage());
 		try {
 			ExtentManager.captureScreenshot();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String methodName=result.getMethod().getMethodName();
-		String logText="<b>"+"TEST CASE:- "+ methodName.toUpperCase()+ " FAILED"+"</b>";		
-	
-	
+		String methodName = result.getMethod().getMethodName();
+		String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " FAILED" + "</b>";
 
-		test.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",MediaEntityBuilder.createScreenCaptureFromPath(ExtentManager.fileName)
-				.build());
-	
-		
+		test.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",
+				MediaEntityBuilder.createScreenCaptureFromPath(ExtentManager.fileName).build());
+
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
 		test.log(Status.FAIL, m);
-		
-		
 
 	}
 
@@ -99,12 +91,12 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 
 	public void onStart(ISuite suite) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onFinish(ISuite suite) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

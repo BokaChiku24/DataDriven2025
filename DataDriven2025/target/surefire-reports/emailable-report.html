@@ -8,87 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">8,653</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Bank Manager Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">107</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Add Customer Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">729</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Open Account Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">282</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num">1,118</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.kunal.base.BaseTest</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1752242162658</td><td rowspan="1">5024</td></tr><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.kunal.testcases.AddCustomerTest</td><td><a href="#m1">addCustomer</a></td><td rowspan="3">1752242162642</td><td rowspan="3">2</td></tr><tr class="failedeven"><td><a href="#m2">addCustomer</a></td></tr><tr class="failedeven"><td><a href="#m3">addCustomer</a></td></tr><tr class="failedodd"><td rowspan="1">com.kunal.testcases.BankManagerLoginTest</td><td><a href="#m4">loginAsBankManager</a></td><td rowspan="1">1752242153996</td><td rowspan="1">106</td></tr><tr class="failedeven"><td rowspan="1">com.kunal.testcases.LoginTest</td><td><a href="#m5">doLogin</a></td><td rowspan="1">1752242154141</td><td rowspan="1">8491</td></tr><tr class="failedodd"><td rowspan="1">com.kunal.testcases.OpenAccountTest</td><td><a href="#m6">openAccount</a></td><td rowspan="1">1752242154110</td><td rowspan="1">30</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Bank Manager Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.kunal.testcases.BankManagerLoginTest</td><td><a href="#m0">loginAsBankManager</a></td><td rowspan="1">1752243500463</td><td rowspan="1">101</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Add Customer Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.kunal.testcases.AddCustomerTest</td><td><a href="#m1">addCustomer</a></td><td rowspan="3">1752243501283</td><td rowspan="3">163</td></tr><tr class="passedeven"><td><a href="#m2">addCustomer</a></td></tr><tr class="passedeven"><td><a href="#m3">addCustomer</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Open Account Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.kunal.testcases.OpenAccountTest</td><td><a href="#m4">openAccount</a></td><td rowspan="1">1752243501455</td><td rowspan="1">282</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.kunal.base.BaseTest#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;11.0.27&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5f538feedcf524b8bc97932e07715b5c, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.94, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: /var/folders/03/hcnh39r5371...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65379/devtoo..., se:cdpVersion: 138.0.7204.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5f538feedcf524b8bc97932e07715b5c
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:442)
-	at com.kunal.base.BaseTest.tearDown(BaseTest.java:219)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;11.0.27&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2024)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-	... 31 more
-Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;11.0.27&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:135)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:500)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$2(JdkHttpClient.java:387)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	... 3 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:560)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:459)
-	... 8 more
-Caused by: java.net.ConnectException: Connection refused
-	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection$ConnectEvent.handle(PlainHttpConnection.java:128)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:960)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:915)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:915)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.kunal.testcases.AddCustomerTest#addCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Aryan</td><td>Khan</td><td>S23434</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
-	at com.kunal.base.BaseTest.click(BaseTest.java:62)
-	at com.kunal.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:16)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.kunal.testcases.AddCustomerTest#addCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Rahul</td><td>Arora</td><td>A34234</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
-	at com.kunal.base.BaseTest.click(BaseTest.java:62)
-	at com.kunal.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:16)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.kunal.testcases.AddCustomerTest#addCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Cory</td><td>Paul</td><td>S3434</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
-	at com.kunal.base.BaseTest.click(BaseTest.java:62)
-	at com.kunal.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:16)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.kunal.testcases.BankManagerLoginTest#loginAsBankManager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.kunal.base.BaseTest.click(BaseTest.java:62)
-	at com.kunal.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:12)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.kunal.testcases.LoginTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>trainer@way2automation.com</td><td>sdfsf</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
-	at com.kunal.base.BaseTest.type(BaseTest.java:108)
-	at com.kunal.testcases.LoginTest.doLogin(LoginTest.java:13)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.kunal.testcases.OpenAccountTest#openAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Rahul Arora</td><td>Rupee</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
-	at com.kunal.base.BaseTest.click(BaseTest.java:62)
-	at com.kunal.testcases.OpenAccountTest.openAccount(OpenAccountTest.java:15)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Bank Manager Login Test</h2><h3 id="m0">com.kunal.testcases.BankManagerLoginTest#loginAsBankManager</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Add Customer Test</h2><h3 id="m1">com.kunal.testcases.AddCustomerTest#addCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Aryan</td><td>Khan</td><td>S23434</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.kunal.testcases.AddCustomerTest#addCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Rahul</td><td>Arora</td><td>A34234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.kunal.testcases.AddCustomerTest#addCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Cory</td><td>Paul</td><td>S3434</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Open Account Test</h2><h3 id="m4">com.kunal.testcases.OpenAccountTest#openAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Rahul Arora</td><td>Rupee</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

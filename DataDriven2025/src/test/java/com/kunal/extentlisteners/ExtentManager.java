@@ -24,7 +24,7 @@ public class ExtentManager {
 	
 
 	    public static ExtentReports createInstance(String fileName) {
-	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
+	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/" + fileName);
 	       
 	        
 	        htmlReporter.config().setTheme(Theme.STANDARD);
@@ -50,7 +50,7 @@ public class ExtentManager {
 			
 			
 			File screeshot = ((TakesScreenshot)  BaseTest.driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(screeshot, new File(".//reports//"+fileName));
+			FileUtils.copyFile(screeshot, new File(System.getProperty("user.dir") + "/reports/" + fileName));
 		}
 		
 		
@@ -63,7 +63,7 @@ public class ExtentManager {
 			
 			
 			File screeshot = ((TakesScreenshot) element).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(screeshot, new File(".//screenshot//"+"Element_"+fileName));
+			FileUtils.copyFile(screeshot, new File(System.getProperty("user.dir") + "/screenshot/"+ "Element_"+ fileName));
 		}
 
 	 
