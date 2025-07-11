@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Add Customer Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.523">
+  <properties />
+  
+  
+            <testcase name="addCustomer" time="0.229" classname="com.kunal.testcases.AddCustomerTest" />
+                <testcase name="addCustomer" time="0.294" classname="com.kunal.testcases.AddCustomerTest" />
+      
+</testsuite>
