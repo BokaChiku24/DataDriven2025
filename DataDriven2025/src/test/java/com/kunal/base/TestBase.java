@@ -2,6 +2,7 @@ package com.kunal.base;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -84,8 +85,7 @@ public class TestBase {
 		driver.get(config.getProperty("testsiteurl"));
 		log.debug("Navigated to: " + config.getProperty("testsiteurl"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicitlyWait")),
-				TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicitlyWait")),TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 20);
 
 	}

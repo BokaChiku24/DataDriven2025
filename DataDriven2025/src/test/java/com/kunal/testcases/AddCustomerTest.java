@@ -3,6 +3,7 @@ package com.kunal.testcases;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,7 +20,16 @@ public class AddCustomerTest extends TestBase {
 
 	@Test(dataProvider = "getCustomerData")
 	public void addCustomer(String firstName, String lastName, String postCode, String alertText) {
+		/*
+		// HashTable<String,String> data
+		if(!runMode.equals("Y")) {
+			throw new SkipException("Skipping the test data for the test case");
+		}
 		
+		if(!data.get("runMode").equals("Y")) {
+			throw new SkipException("Skipping the test data for the test case");
+		}
+		*/
 		type("firstName_CSS",firstName);
 		type("lastName_CSS",lastName);
 		type("postCode_CSS",postCode);

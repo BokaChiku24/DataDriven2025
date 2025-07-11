@@ -4,6 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.SkipException;
 
 import com.kunal.base.TestBase;
 import com.kunal.utilities.TestUtils;
@@ -15,6 +16,13 @@ public class CustomListeners extends TestBase implements ITestListener {
 		// not implemented
 		Reporter.log("Test case start: " + result.getMethod().getMethodName());
 		test = report.startTest(result.getName().toUpperCase());
+		
+		/*
+		// Run modes - Y/N
+		if(!TestUtils.isTestRunnable(result.getName(),excel)) {
+			throw new SkipException("Skipping the test" + result.getName().toUpperCase() + " as run mode is set to No");
+		}
+		*/
 
 	}
 
@@ -45,6 +53,9 @@ public class CustomListeners extends TestBase implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 		// not implemented
+		test.log(LogStatus.SKIP, result.getName().toUpperCase() + " Skipped the test case");
+		report.endTest(test);
+		report.flush();
 	}
 
 	public void onStart(ITestContext context) {

@@ -35,15 +35,37 @@ public class TestUtils extends TestBase {
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
 
-		Object[][] data = new Object[rows - 1][cols];
-		
+		Object[][] data = new Object[rows - 1][1];
+		Hashtable<String, String> table = null;
 		for(int rowNum = 2; rowNum <= rows; rowNum++) {
+			table = new Hastable<String, String>();
 			for(int colNum = 0; colNum<cols; colNum++) {
-				data[rows-2][cols] = excel.getCellData(sheetName, )
+				table.put(excel.getCellData(sheetName, colNum, 1),excel.getCellData(sheetName, colNum, rowNum));
+				data[rows-2][cols] = table;
+				data[rows-2][0] = excel.getCellData(sheetName, colNum, rowNum)
 			}
 		}
 		return data;
 	}
+	*/
+	
+	/*
+	public static boolean isTestRunnable(String testName, ExcelReader excel) {
+	String sheetName = "test_suite";
+		int row = excel.getRowCount(sheetName);
+		
+		for(int rowNum = 2; rowNum<= row ; rowNum++){
+			String testCase = excel.getCellData(sheetName, "TCID", rowNum);
+			if(testCase.equalsIgnoreCase(testName)){
+			String runMode = excel.getCellData(sheetName, "Runmode", rowNum);
+			if(runMode.equalsIgnoreCase("Y"))
+			return true;
+			else
+			return false;
+			}
+		}
+	}
+	
 	*/
 
 }

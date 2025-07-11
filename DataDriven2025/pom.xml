@@ -76,7 +76,6 @@
     <artifactId>poi-ooxml-schemas</artifactId>
     <version>3.6</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
   </dependencies>
   <build>
         <pluginManagement>
